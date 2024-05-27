@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Aesthetics Pro</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_sub_heading">Enter your login details to access \nyour account</string>
+    <string name="user_name">User name</string>
+    <string name="password">Password</string>
+    <string name="forgot_your_password"><u>Forgot Password?</u></string>
+    <string name="sign_in">Sign In</string>
+    <string name="item_text">Quantity used:  <font color="#253D5D"><b>100</b></font> Units</string>
+    <string name="unit_text">Units</string>
+    <string name="scan_your_product_to_add_on_inventory">Scan your product to add \non inventory</string>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    android:layout_marginVertical="@dimen/_7sdp"
+    android:layout_marginHorizontal="@dimen/_15sdp"
+    android:background="@drawable/rounded_gray_borders">
+
+    <ImageView
+        android:id="@+id/prod_iv"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/ic_prod_five"
+        android:background="@drawable/product_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/med_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="Xeomin"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintStart_toEndOf="@+id/prod_iv"
+        app:layout_constraintTop_toTopOf="@+id/prod_iv" />
+
+    <TextView
+        android:id="@+id/formula_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="Merz"
+        android:textColor="@color/gray_75"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintStart_toEndOf="@+id/prod_iv"
+        app:layout_constraintTop_toBottomOf="@+id/med_name" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Assigned Total:"
+        android:textColor="@color/gray_75"
+        android:textSize="@dimen/_6ssp"
+        app:layout_constraintStart_toEndOf="@+id/prod_iv"
+        app:layout_constraintTop_toBottomOf="@+id/formula_name" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:text="100"
+        android:textColor="#253D5D"
+        android:textStyle="bold"
+        android:textSize="@dimen/_7ssp"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintStart_toEndOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/unit_text"
+        android:textColor="@color/gray_75"
+        android:textSize="@dimen/_6ssp"
+        android:layout_marginStart="@dimen/_2sdp"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:background="@color/gray_25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@color/main_blue"
+        app:layout_constraintEnd_toEndOf="@+id/textView21"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="50/100"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:textColor="@color/gray_75"
+        android:textSize="@dimen/_6ssp"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

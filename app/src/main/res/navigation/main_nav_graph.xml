@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph.xml"
+    app:startDestination="@id/generateReportFragment">
+
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.usaclean.myaestheticspro.main.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment2_to_accountFragment"
+            app:destination="@id/accountFragment" />
+        <action
+            android:id="@+id/action_profileFragment2_to_supportFragment"
+            app:destination="@id/supportFragment" />
+        <action
+            android:id="@+id/action_profileFragment2_to_faqFragment"
+            app:destination="@id/faqFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.usaclean.myaestheticspro.main.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/procedureReportFragment"
+        android:name="com.usaclean.myaestheticspro.main.procedureReport.ProcedureReportFragment"
+        android:label="fragment_procedure_report"
+        tools:layout="@layout/fragment_procedure_report" >
+        <action
+            android:id="@+id/action_procedureReportFragment_to_procedureDetailsFragment"
+            app:destination="@id/procedureDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/procedureDetailsFragment"
+        android:name="com.usaclean.myaestheticspro.main.procedureDetails.ProcedureDetailsFragment"
+        android:label="fragment_procedure_details"
+        tools:layout="@layout/fragment_procedure_details" />
+    <fragment
+        android:id="@+id/todoListFragment"
+        android:name="com.usaclean.myaestheticspro.main.todolist.TodoListFragment"
+        android:label="fragment_todo_list"
+        tools:layout="@layout/fragment_todo_list" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.usaclean.myaestheticspro.main.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_inventoryDetailsFragment"
+            app:destination="@id/inventoryDetailsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_generateReportFragment"
+            app:destination="@id/generateReportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inventoryDetailsFragment"
+        android:name="com.usaclean.myaestheticspro.main.inventoryDetails.InventoryDetailsFragment"
+        android:label="fragment_inventory_details"
+        tools:layout="@layout/fragment_inventory_details" >
+        <action
+            android:id="@+id/action_inventoryDetailsFragment_to_generateReportFragment"
+            app:destination="@id/generateReportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generateReportFragment"
+        android:name="com.usaclean.myaestheticspro.main.generateReport.GenerateReportFragment"
+        android:label="fragment_generate_report"
+        tools:layout="@layout/fragment_generate_report" />
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="com.usaclean.myaestheticspro.main.support.SupportFragment"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support" />
+    <fragment
+        android:id="@+id/faqFragment"
+        android:name="com.usaclean.myaestheticspro.main.faq.FaqFragment"
+        android:label="fragment_faq"
+        tools:layout="@layout/fragment_faq" />
+</navigation>

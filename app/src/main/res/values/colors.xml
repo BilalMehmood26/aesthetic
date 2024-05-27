@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_blue">#03C9D7</color>
+    <color name="white_alpha">#22FFFFFF</color>
+
+    <color name="calander_txt">#03C9D7</color>
+    <color name="gray_25">#F1F1F1</color>
+    <color name="card_bg">#FDF3EF</color>
+    <color name="gray_75">#6B6B6B</color>
+</resources>

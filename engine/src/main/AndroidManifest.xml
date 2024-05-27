@@ -1,0 +1,6 @@
+<manifest
+    package="org.andresoviedo.android_3d_model_engine"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:versionCode="21"
+    android:versionName="2.5.1"/>

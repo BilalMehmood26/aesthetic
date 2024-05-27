@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home_icon_selection"
+        android:enabled="true"
+        android:title="Home" />
+    <item
+        android:id="@+id/todoListFragment"
+        android:icon="@drawable/todo_icon_selection"
+        android:enabled="true"
+        android:title="To do List" />
+    <item
+        android:id="@+id/procedureReportFragment"
+        android:icon="@drawable/reports_icon_selection"
+        android:enabled="true"
+        android:title="Procedure Reports" />
+
+    <item
+        android:id="@+id/profileFragment2"
+        android:icon="@drawable/profile_icon_selection"
+        android:enabled="true"
+        android:title="Profile" />
+</menu>
